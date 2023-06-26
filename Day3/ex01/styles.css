@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif; /* Thay đổi phông chữ cho toàn bộ trang */
+}
+
+
+/* CSS Begin LEFT */
+
+.Contact__info-title {
+    position: relative;
+}
+
+.Contact__info {
+    margin: 40px;
+    padding: 40px;
+}
+
+.title {
+    padding: 20px 0;
+    display: inline-block;
+    position: relative;
+}
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background-color: green;
+}
+
+
+.Contact__info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact__info-content {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    color: #ccc;
+    margin-top: 20px;
+}
+.Contact__info-content p {
+    margin-left: 8px;
+}
+
+.Contact__info-title {
+    margin: 20px 0;
+}
+
+/* End Code CSS LEFT */
+
+
+
+/* Begin CSS Right */
+.input {
+    position: absolute;
+    left: 30%;
+    top: 18%;
+}
+
+.input__title {
+    margin-bottom: 40px;
+}
+
+label {
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+.textarea {
+    border: 1px solid #ccc;
+    color: #ccc;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(20, 156, 156);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+

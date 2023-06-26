@@ -1,0 +1,68 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    padding: 0 100px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* CSS MAP */
+.map-title {
+    margin-top: 20px;
+}
+
+.map-list {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    border: 1px solid #d5a002;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.map-items a {
+    text-decoration: none;
+    color: rgb(213, 160, 2);
+}
+
+.map-items {
+    padding: 10px;
+}
+
+.change {
+    background: #d5a002;
+    color: white;   
+    
+}
+/* End Map */
+
+
+/* Write code Image */
+.image-map {
+    display: flex;
+    width: 100%;
+    height: 280px;
+    margin-top: 24px;
+}
+
+.map-content {
+    background-color: #ebe8e8;
+    font-size: 16px;
+    padding: 20px 100px 0 20px;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+.map-content-first {
+    color: #555050;
+    margin: 10px 0;
+}
+
+/* End Code Image */
