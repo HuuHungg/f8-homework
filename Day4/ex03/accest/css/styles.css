@@ -89,8 +89,6 @@ input:nth-of-type(5):checked ~ header > nav > ul > li > .label-5 {
 
 /* CSS CONTENT */
 
-
-
 .page{
   display: flex;
   flex-wrap: nowrap;
