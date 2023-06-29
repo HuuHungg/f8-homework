@@ -1,0 +1,72 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+}
+
+/* CSS FORM */
+
+.form-book {
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.form-book p {
+    color: #3A2517;
+    font-family: "BebasNeue", sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    margin: 40px;
+}
+
+.form-book h1 {
+    font-family: "Alfa Slab One", sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color: #3A2517;
+}
+
+
+/* CSS INPUT and Button */
+
+.form-book_check {
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 32% 16px 24%;
+}
+
+.form-book_information input {
+    padding: 8% 10%;
+    margin: 20px;
+    width: 177%;
+    font-family: "BebasNeue", sans-serif;
+    border: 1px solid #ccc;
+}
+
+
+.form-book_information input::placeholder {
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+.form-book_information button {
+    padding: 8% 10%;
+    margin: 20px;
+    width: 177%;
+    background-color: #a23d31;
+    border: none;
+    color: white;
+    font-family: "Alfa Slab One", sans-serif;
+    font-weight: 800;
+    border-radius: 2px;
+    font-size: 17px ;
+}
