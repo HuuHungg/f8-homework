@@ -1,0 +1,239 @@
+/* Resets CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 800px;
+  margin: auto;
+  font-family: "Lato", sans-serif;
+}
+
+/* CSS các thẻ */
+
+button {
+  background-color: #ea3f33;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 60rem;
+}
+
+p {
+  color: #ccc;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+span {
+  color: red;
+}
+
+input {
+  border: 2px solid #dcdcdc;
+  transition: border-color 0.3s;
+}
+
+textarea {
+  margin-top: 16px;
+  width: 100%;
+  border: 2px solid #dcdcdc;
+}
+
+textarea::placeholder {
+  top: -20px;
+}
+
+textarea:hover {
+  border-color: black;
+}
+
+/* End */
+
+/* CSS Form */
+.title {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.input-with-icon input[type="text"],
+.input-with-icon input[type="email"],
+.input-with-icon input[type="number"] {
+  padding-left: 5rem;
+  font-size: 20px;
+}
+
+.input-with-icon:hover input[type="text"],
+.input-with-icon:hover input[type="email"],
+.input-with-icon:hover input[type="number"] {
+  border-color: black;
+}
+
+.input-with-icon {
+  display: flex;
+  position: relative;
+}
+
+.icon-fix {
+  position: absolute;
+  top: 19.5px;
+  height: 60px;
+  left: 0.5px;
+  background-color: #dcdcdc;
+  padding: 20.7px 25.3px 20.4px 23px;
+  color: white;
+  font-size: 18px;
+  margin: 0.7px -0.3px;
+  height: 62.4px;
+  max-width: 60px;
+  max-height: 70px;
+  outline: none;
+}
+
+.icon-fix_start {
+  position: absolute;
+  top: 43px;
+  right: 20px;
+  color: #dcdcdc;
+}
+
+.icon-fix_up {
+  position: absolute;
+  top: 23px;
+  right: 24px;
+  color: #dcdcdc;
+  font-size: 22px;
+}
+
+.icon-fix_down {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: #dcdcdc;
+  margin-top: 6px;
+  font-size: 22px;
+}
+
+.input-with-icon input {
+  padding: 18px;
+  margin: 20px 0;
+  width: 100%;
+  border: 2px solid #ccc;
+}
+
+.input-with-icon:hover i:first-child {
+  border: 2px solid black;
+  background: black;
+}
+
+.input-with-icon textarea {
+  padding: 26px 0 0px 79px;
+  font-size: 23px;
+}
+
+.icon-fix-message {
+  position: absolute;
+  top: 16.3px;
+  left: 1px;
+  background-color: #dcdcdc;
+  padding: 20.7px 25.3px 20.4px 23px;
+  color: white;
+  font-size: 18px;
+  margin: 0.7px -0.3px;
+  max-width: 60px;
+  display: flex;
+  height: 93%;
+  outline: none;
+  text-align: center;
+}
+
+.message-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.checkbox-container {
+  color: #c3c3c3;
+  font-size: 18px;
+}
+
+.checkbox-container i {
+  color: black;
+  border: 2px solid #dcdcdc;
+  margin-right: 4px;
+  padding: 4px;
+}
+
+.checked {
+  margin-right: 20px;
+}
+
+.icon-fix-section {
+  position: absolute;
+  top: -0.5px;
+  left: 0.5px;
+  background-color: #dcdcdc;
+  padding: 20.7px 25.3px 41.5px 23px;
+  color: white;
+  font-size: 18px;
+  margin: 0.7px -0.3px;
+  height: 64.5px;
+  max-width: 60px;
+  max-height: 66px;
+}
+
+.input-with-Subject {
+  position: relative;
+  margin: 20px 0 30px 0;
+}
+
+.input-select_check {
+  width: 100%;
+  padding: 20px 14px 20px 77px;
+  border: 2px solid #dcdcdc;
+  font-size: 18px;
+  -webkit-appearance: none;
+  color: #757575;
+}
+
+.input-with-Subject:hover .icon-fix-section {
+  background-color: black;
+}
+
+.input-select_check:hover {
+  border-color: black;
+  transition: border-color 0.3s;
+}
+
+.Enter-title {
+  position: absolute;
+  top: -51px;
+  left: 60px;
+  background-color: black;
+  color: #dcdcdc;
+  padding: 14px;
+  display: none;
+}
+
+.Enter-title::after {
+  content: "";
+  width: 0px;
+  height: 0;
+  position: absolute;
+  border: 15px solid transparent;
+  border-top: 10px solid black;
+  bottom: -25px;
+  right: 118px;
+}
+
+.input-hover:focus + .Enter-title {
+  display: block;
+}

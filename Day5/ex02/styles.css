@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  color: #f2eded;
+  background: rgb(230, 79, 14);
+  padding: 0 24px;
+}
+
+span i {
+  margin: 0 20px;
+}
+
+article {
+  padding: 0 15px;
+  margin: 0;
+  font-weight: 300;
+  display: none;
+}
+
+/* CSS động */
+
+input:checked ~ article {
+  display: block;
+}
+
+input:checked + label > .icon-plus {
+  display: none;
+}
+
+input:checked + label > .icon-minus {
+  display: block;
+}
+
+.icon-minus {
+  display: none;
+}
+
+article p {
+  margin: 20px 40px;
+}
