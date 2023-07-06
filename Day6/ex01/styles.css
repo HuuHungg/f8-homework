@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Lobster&family=Open+Sans:wght@400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+a:hover {
+  background-color: #52a3d4;
+  color: #d3e6f3;
+}
+
+a {
+  color: #666666;
+  font-weight: 500;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  margin-top: 30px;
+  color: #cccc;
+  height: 52px;
+}
+
+.navbar-about {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  border: 1px solid;
+}
+
+.navbar-about a {
+  text-decoration: none;
+  padding: 11px 14px;
+  margin: 0 4px;
+}
+
+.navbar-about span {
+  padding: 10px;
+}
+
+.navbar-company {
+  list-style: none;
+  position: absolute;
+  top: 67px;
+  width: 14rem;
+  left: 1px;
+  background: #ffffff;
+  height: 10.2rem;
+  box-shadow: -2px -1px 20px rgba(0, 0, 0, 0.5);
+  display: none;
+  color: #666565;
+}
+
+.navbar-company::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom: 14px solid #f8f6f6;
+  top: -24px;
+  left: 20px;
+}
+
+.navbar-about:hover .navbar-company {
+  display: block;
+  animation: fadeIn 0.9s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Độ mờ ban đầu của .navbar-company */
+  }
+  100% {
+    opacity: 1; /* Độ mờ khi hover vào .navbar-about */
+  }
+}
+
+.navbar-company > li {
+  padding: 16px;
+  border-bottom: 1px solid #e1e0e0;
+}
+
+.navbar-blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+}
+
+.navbar-blog a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 4px;
+}
+
+.navbar-hollow {
+  width: 20rem;
+  border: 1px solid;
+}

@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Lobster&family=Nunito+Sans:wght@300;500;700&family=Open+Sans:wght@400;500&family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg");
+  font-family: "Nunito Sans", sans-serif;
+  margin: auto;
+  background-size: cover;
+  height: 100vh;
+  align-items: center;
+  width: 1200px;
+}
+
+input {
+  outline: none;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+/* CSS left */
+
+.justlog {
+  background-color: #eb6254;
+  color: #fefefe;
+  width: 300px;
+  height: 428px;
+  padding: 70px 11px;
+  justify-content: center;
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+h2 span {
+  padding: 0px 6px;
+  color: #eb6254;
+  border-radius: 6px;
+  background-color: #ffff;
+  margin-bottom: 20px;
+}
+
+.justlog p {
+  padding-top: 26px;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #ffff;
+}
+
+.justlog button {
+  border: none;
+  margin: 2rem 0;
+  width: 118px;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.society a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0px 8px;
+  background-color: #da5b4e;
+  padding: 7px 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* CSS Right */
+.account {
+  background-color: #ffffff;
+  width: 400px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  text-align: center;
+  padding: 4px 39px;
+  height: 428px;
+}
+
+.account > h1 {
+  margin: 40px 0;
+  font-size: 20px;
+  font-weight: 700px;
+}
+
+.account > h1 > span {
+  color: #ed756c;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 40%;
+  border-bottom: 1px solid #ed756c;
+}
+
+.item-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.5);
+}
+
+.item-input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: rgb(188, 187, 187);
+}
+
+.checked {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #7a797a;
+}
+
+.checked > a {
+  text-decoration: none;
+  color: #7a797a;
+}
+
+.account-button > button {
+  width: 100%;
+  padding: 12px;
+  background-color: #eb6254;
+  border-radius: 4px;
+  color: #ffff;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.content-footer {
+  color: #7a797a;
+}
+
+/* Css mũi tên  */
+
+.right {
+  position: absolute;
+  top: 48%;
+  left: 21px;
+  background: rgb(254, 254, 254);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: rgb(236, 104, 92);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px;
+}
+
+.right-arrow-label {
+  position: absolute;
+  top: 48%;
+  left: 43%;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-checkbox:checked ~ .right-arrow-label {
+  transform: translateX(39.5rem);
+}
+
+.toggle-checkbox:checked ~ .right-arrow-label .right i {
+  transform: rotate(180deg);
+}
+
+/* End CSS */

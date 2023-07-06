@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Lobster&family=Open+Sans:wght@400;500&family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+  background-color: #ebf5fe;
+  font-family: "Roboto", sans-serif;
+}
+p {
+  margin: 6px 40px 17px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #8d8d8d;
+}
+a {
+  list-style: none;
+  color: blue;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 24px 40px;
+  font-weight: 900;
+}
+
+.designer-title h2 {
+  font-size: 29px;
+  margin: 20px 0;
+}
+
+.container-designer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.designer {
+  background-color: #ffffff;
+  margin-left: 22px;
+  width: 360px;
+  border-radius: 8px;
+  height: 244px;
+  cursor: pointer;
+  position: relative;
+  border: 3px solid transparent;
+}
+
+/* CSS cho hover */
+.container:nth-child(1) .designer:nth-child(1):hover {
+  border: 3px solid #e5837d;
+}
+
+.container:nth-child(1) .designer:nth-child(2):hover {
+  border: 3px solid #2f8974;
+}
+
+.container:nth-child(1) .designer:nth-child(3):hover {
+  border: 3px solid #e99a40;
+}
+
+.container:nth-child(2) .designer:nth-child(1):hover {
+  border: 3px solid #193a7b;
+}
+
+.container:nth-child(2) .designer:nth-child(2):hover {
+  border: 3px solid #5b08ae;
+}
+
+.container:nth-child(2) .designer:nth-child(3):hover {
+  border: 3px solid #547d09;
+}
+/* End Hover */
+
+/* CSS ICON */
+.designer-title {
+  display: flex;
+}
+
+.designer i {
+  font-size: 30px;
+  background: #e46e63;
+  width: 65px;
+  color: #ffff;
+  height: 65px;
+  padding: 18px;
+  margin: 21px 19px 9px 41px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.container i.fa-brush {
+  transform: rotate(-45deg);
+}
+
+/* END ICON */
+
+/* Css Background color */
+
+.container i.fa-figma {
+  background: linear-gradient(to right, #015e4c, rgba(112, 181, 167, 0.5));
+}
+
+.container i.fa-bolt {
+  background: linear-gradient(to right, #e79026, rgba(228, 148, 49, 0.5));
+}
+
+.container i.fa-rocket {
+  background: linear-gradient(to left, #012569, rgba(55, 110, 209, 0.5));
+  transform: rotate(-90deg);
+}
+
+.container i.fa-layer-group {
+  background: linear-gradient(to right, #5b08ae, rgba(107, 31, 183, 0.5));
+}
+
+.container i.fa-envelope {
+  background: linear-gradient(to right, #547d09, rgba(94, 126, 34, 0.5));
+}
+/* End Back Ground */
