@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chủ đầu tư</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <!-- Write code img and title -->
+        <div class="container">
+          <img
+          src=https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2662&q=80"
+          alt="" class="image-titile" />
+          <div class="img-f8">
+            <img
+              src="https://inkythuatso.com/uploads/thumbnails/800/2021/09/logo-vingroup-inkythuatso-13-13-42-55.jpg"
+              alt=""
+              class="image-fullstack"
+            />
+          </div>
+          <div class="container-title">
+            <h1>TẬP ĐOÀN VINGROUP</h1>
+            <div class="content">
+              <p>Năm thành lập: <b>1993</b></p>
+              <p>Dự án đã đầu tư: <b>35</b></p>
+            </div>
+          </div>
+        </div>
+        <!-- End code img and title -->
+
+        <!-- Write code information -->
+        <div class="infomation">
+          <ul>
+            <li>
+              <p class="underline" id="p-js" onclick="toggleUnderline(this)">
+                Giới thiệu
+              </p>
+            </li>
+            <li>
+              <p id="p-js" onclick="toggleUnderline(this)">Dự án đã đầu tư</p>
+            </li>
+            <li><p id="p-js" onclick="toggleUnderline(this)">Liên hệ</p></li>
+          </ul>
+        </div>
+        <!-- End code infomation -->
+      </section>
+    </main>
+  </body>
+  <!-- Write code js -->
+  <script>
+    function toggleUnderline(element) {
+      var paragraph = document.querySelectorAll("#p-js");
+      paragraph.forEach((e) => {
+        e.classList.remove("underline");
+      });
+      element.classList.add("underline");
+    }
+  </script>
+  <!-- End code js -->
+</html>
