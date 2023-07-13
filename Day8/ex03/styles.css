@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.enginear {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.enginear img {
+  width: 5rem;
+  height: 5rem;
+  margin: 20px 0;
+}
+
+.enginear p {
+  line-height: 1.5;
+  width: 25rem;
+  padding: 41px 12px;
+  max-height: 9rem;
+  font-size: 14px;
+  color: #a9a7a8;
+}
+
+.enginear button {
+  padding: 11px 26px;
+  background: #29388e;
+  color: #fbfbfc;
+  cursor: pointer;
+  border: none;
+  margin: 20px 0;
+}
+
+button:hover {
+  animation-name: zoomIn;
+  animation-duration: 0.5s;
+  background-color: #28a745;
+  color: #fff;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background: #7f7f7f;
+}
+
+/* CSS section */
+
+.section-fix {
+  margin-left: 70%;
+  background: #fff;
+  height: 59rem;
+}
+
+.shop-title {
+  background: #f4f4f4;
+  display: flex;
+  padding: 20px 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+h2 {
+  position: relative;
+}
+
+.shop-number {
+  font-size: 12px;
+  background: blue;
+  padding: 2px 6px;
+  width: 20px;
+  height: 20px;
+  top: -6px;
+  right: -23px;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.shop-title > i {
+  background-color: red;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End CSS SECTION */
+
+/* Css order */
+
+.order {
+  display: flex;
+  padding: 20px 20px 34px 20px;
+}
+
+.order:nth-child(2) {
+  border-bottom: 1px solid #ccc;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-img {
+  width: 76px;
+  height: 74px;
+  object-fit: contain;
+  padding: 8px 12px;
+  background: #f3eee0;
+}
+
+.order-content {
+  margin-left: 3rem;
+  position: relative;
+}
+
+.oder-quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-around;
+  padding: 5px 0px;
+  border-radius: 99px;
+  color: #ccc;
+  width: 7rem;
+  border: 1px solid #ccc;
+}
+
+.course {
+  margin: 23px 0 0 44px;
+  font-size: 20px;
+}
+
+.exit {
+  font-size: 20px;
+  margin: -9px 84px;
+  color: #ccc;
+}
+
+/* End CSS ORDER */
+
+/* CSS TOTAL */
+
+.total {
+  padding: 0 20px 20px;
+}
+
+.total-course {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.content-total {
+  color: #cccc;
+  font-size: 13px;
+}
+
+/* And CSS total */
+
+/* CSS FORM */
+
+.form-cart {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  outline: none;
+}
+
+.form-cart input {
+  padding: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-cart input:nth-child(2) {
+  background: #4060f2;
+  color: #ffff;
+}
+
+::placeholder {
+  color: #ccc;
+}
+
+/* End CSS FORM */
+
+/* CSS Footer */
+.ship {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.ship > i {
+  font-size: 33px;
+  width: 60px;
+  align-items: center;
+  height: 60px;
+  border-radius: 50%;
+  color: #4862dd;
+  border: 1px solid #4862dd;
+  display: flex;
+  justify-content: center;
+}
+
+.ship p {
+  font-size: 20px;
+  margin: 20px 0;
+}
