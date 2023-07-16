@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 10rem;
+  height: 10rem;
+}
+
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+}
+
+/* CSS Information */
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container-left {
+  display: flex;
+  flex-direction: row;
+  text-align: end;
+  margin: 30px 0;
+}
+
+.content-left {
+  width: 100%;
+  line-height: 1.5;
+  padding: 0 23px;
+  transition: transform 0.5s ease;
+}
+
+.container-left:hover .content-left {
+  transform: translateX(23.2rem);
+  text-align: start;
+}
+
+.content-left > button {
+  padding: 6px 12px;
+  border-radius: 99px;
+  color: #535354;
+  border: none;
+  transition: background-color 0.5s linear;
+  margin: 10px 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+}
+
+.container-left:hover button {
+  background-color: #a26f5a;
+  color: #fff;
+}
+
+.content-right {
+  display: flex;
+  margin: 10px 0;
+  width: 146px;
+  transition: transform 0.4s ease;
+}
+
+.container-left:hover .content-right {
+  transform: translateX(-9rem);
+}
+
+.content-left > p {
+  color: #5e5e62;
+  padding: 10px 0;
+}
+
+.icon {
+  font-size: 14px;
+  display: flex;
+  background: #ecf5f4;
+  width: 26px;
+  font-size: 9px;
+  color: #4ba798;
+  margin-top: 8px;
+  height: 26px;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.Hollow {
+  /* display: inline-block; */
+  position: relative;
+}
+
+.Hollow::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  top: 38px;
+  left: 13px;
+  width: 1px;
+  height: 138px;
+  background-color: #ccc;
+}
+
+/* CSS Image */
+
+.images-all {
+  margin: 39px 0;
+}
+
+.images {
+  position: relative;
+}
+
+.images > img {
+  width: 260px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.img-small {
+  position: absolute;
+  top: 110px;
+  left: -79px;
+}
+
+.img-small > img {
+  width: 11rem;
+  height: 18rem;
+}
+
+.img-content {
+  background-color: #4159ad;
+  padding: 19px 18px;
+  position: absolute;
+  width: 158px;
+  height: 271px;
+  display: flex;
+  margin: 10px;
+  top: -3px;
+  flex-direction: column;
+  text-align: end;
+  justify-content: end;
+  color: #fff;
+}
+
+.number {
+  font-size: 3rem;
+  color: #9fa8b7;
+  font-weight: 600;
+}
+
+/* End css */

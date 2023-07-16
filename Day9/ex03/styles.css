@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+  background: #fefefe;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Css header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  padding: 20px 0;
+}
+
+/* End CSS Header */
+
+/* CSS FORM */
+input {
+  border: 1px solid #ccc;
+  background: #fdfdfd;
+  outline: none;
+  border-radius: 6px;
+}
+
+.fullName-fix {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px;
+}
+
+.fullName {
+  position: relative;
+}
+
+.placeholder {
+  position: absolute;
+  top: 30%;
+  left: 11%;
+  font-size: 6;
+  color: #999;
+  pointer-events: none;
+  transition: 0.2s ease-out;
+  transform-origin: left top;
+}
+
+.inputField:focus + .placeholder {
+  top: 2px;
+  left: 9%;
+  font-size: 12px;
+  color: #000;
+  background-color: #fff;
+  padding: 0 5px;
+}
+
+.fullName > input {
+  /* padding: 10px 100px; */
+  width: 20rem;
+  height: 3rem;
+  margin: 0 25px;
+}
+
+.option > select {
+  margin: 0 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 20rem;
+  height: 3rem;
+  padding: 0 11px;
+  border: 1px solid #ccc;
+  background: #fefefe;
+  border-radius: 6px;
+  color: #999;
+}
+
+.text {
+  position: relative;
+  width: 689px;
+  height: 150px;
+  margin-left: 23%;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.areaInput {
+  position: absolute;
+  left: 2%;
+  top: 13%;
+  font-size: 16px;
+  color: #888;
+  transition: all 0.3s;
+}
+
+textarea:focus + .areaInput {
+  top: 0%;
+  font-size: 12px;
+  color: #000;
+}
+
+button {
+  color: #ffff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 99px;
+  display: flex;
+  background: #4c77d7;
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+
+/* End CSS FORM */

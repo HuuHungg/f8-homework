@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+  font-family: "Inter", sans-serif;
+}
+
+/* CSS Căn Chỉnh vị trí */
+.flex-fix {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 25%;
+  margin: 20px;
+}
+
+.box-main {
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 233px;
+  transition: transform 0.3s;
+  transform: translateZ(0);
+}
+
+.box-main_fix {
+  position: absolute;
+  padding: 6px 16px;
+  transition: all 0.6s ease-in-out;
+  height: 233px;
+}
+
+.box-main_fix > i {
+  font-size: 2rem;
+  margin: 20px 0;
+  transition: transform 0.2s;
+  color: #bb9687;
+}
+
+.box-main_fix > h2 {
+  font-size: 19px;
+  margin-bottom: 8px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.box-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25%;
+}
+
+.box-icon > i {
+  display: flex;
+  margin: 0 10px;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+/* Css Hiệu ứng khi hover */
+
+.box:hover .box-main {
+  border: 1px solid rgb(225, 212, 212);
+  animation: moveBack 0.3s forwards;
+  border-radius: 2px;
+}
+
+.box:hover {
+  background-image: linear-gradient(
+      rgba(187, 149, 135, 0.8),
+      rgba(187, 149, 135, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1689229415614-f360cc829c48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=986&q=80");
+  background-size: cover;
+}
+
+.box-icon > i:hover {
+  background: #fff;
+  color: #000;
+}
+
+.box:hover .box-main_fix {
+  color: #ffff;
+}
+
+.box:hover .box-icon {
+  transform: translateY(-60px);
+}
+
+.box:hover .box-main_fix > i {
+  transform: scale(0);
+}
+
+.box:hover .box-main_fix > h2,
+.box:hover .box-icon {
+  animation: fadeIn 0.4s ease-in-out forwards;
+}
+
+.box:hover .box-main_fix > p {
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-60px);
+  }
+}
+
+@keyframes moveBack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+
+/* End css */
