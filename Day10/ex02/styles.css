@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eeee;
+  margin: 93px 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input {
+  display: none;
+}
+
+/* Căn chỉnh vị trí độ dài */
+.list-all,
+.content {
+  width: 689px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.content {
+  margin-top: 0;
+  overflow-x: auto;
+  transform-origin: left top;
+  transform: rotateX(0deg);
+}
+
+.list-item {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  padding: 3px;
+}
+
+/* Căn chỉnh phần border */
+
+.item:first-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.item + .item {
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.item > label {
+  display: block;
+  transition: background-color 0.2s linear;
+  transition-property: color;
+  padding: 17px 8px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.fix {
+  line-height: 1.5rem;
+  width: 800px;
+  padding: 12px 16px;
+}
+
+/* Khi checked thì đổi màu background */
+input[id="slideshow"]:checked ~ .list-all .list-item label[for="slideshow"],
+input[id="levenshtein"]:checked ~ .list-all .list-item label[for="levenshtein"],
+input[id="progresso"]:checked ~ .list-all .list-item label[for="progresso"],
+input[id="php"]:checked ~ .list-all .list-item label[for="php"] {
+  background-color: rgb(107, 112, 112);
+  color: #fff;
+}
+
+/* ẩn đi các đoạn content */
+.fix-simple,
+.fix-alg,
+.fix-barra,
+.fix-captcha {
+  display: none;
+}
+
+/* Khi checked thì hiện từng phần tử */
+input[id="slideshow"]:checked ~ .content .fix-simple,
+input[id="levenshtein"]:checked ~ .content .fix-alg,
+input[id="progresso"]:checked ~ .content .fix-barra,
+input[id="php"]:checked ~ .content .fix-captcha {
+  display: block;
+}
+
+/* Animation */
+input[id="slideshow"]:checked ~ .content-simple,
+input[id="levenshtein"]:checked ~ .content-alg,
+input[id="progresso"]:checked ~ .content-barra,
+input[id="php"]:checked ~ .content-php {
+  animation: flip 1s linear;
+}
+
+/* Tạo hiệu ứng chuyển động  */
+@keyframes flip {
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: rotateX(-90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}

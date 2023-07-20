@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #05a8f5;
+  --white-color: #ffff;
+}
+
+body {
+  width: 1200px;
+  /* margin: auto; */
+}
+
+ul {
+  list-style: none;
+  margin: 5rem 0;
+}
+
+.section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: var(--primary-color);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--white-color);
+}
+
+.container h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.list-icon {
+  position: absolute;
+  background: var(--white-color);
+  width: 100vw;
+  height: 100vh;
+  clip-path: circle(7rem at top left);
+  transition: clip-path 0.5s linear;
+}
+
+.list-icon .icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+input[id="list"]:checked ~ .list-icon label {
+  visibility: hidden;
+}
+
+.navbar {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  color: var(--primary-color);
+  visibility: hidden;
+  width: 4%;
+}
+
+.icon-right {
+  font-size: 2rem;
+  transition: transform 0.2s linear;
+}
+
+input[id="list"]:checked ~ .navbar {
+  visibility: visible;
+}
+
+input[id="list"]:checked ~ .navbar > .icon-right {
+  transform: rotate(180deg);
+}
+
+.navbar > ul > li {
+  margin: 10px 0;
+  width: 14rem;
+  height: 3rem;
+  display: flex;
+  padding: 0 32px;
+  font-size: 25px;
+  align-items: center;
+  transition: all 0.3s linear;
+  color: var(--primary-color);
+}
+
+/* Khi check thì vòng tròn toả ra toàn màn hình  */
+input[id="list"]:checked ~ .list-icon {
+  clip-path: circle(150% at top left);
+}
+
+/* Khi hover vào thì background đổi màu */
+input[id="home"]:hover ~ .item1,
+input[id="about"]:hover ~ .item2,
+input[id="portfolio"]:hover ~ .item3,
+input[id="contact"]:hover ~ .item4 {
+  color: black;
+  background-color: #eeee;
+}
