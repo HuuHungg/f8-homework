@@ -27,6 +27,7 @@ body {
   left: 50%;
   top: 50%;
   translate: -50% -50%;
+  transition: transform 0.2s linear;
 }
 
 /* CSS tam giác trái  */
@@ -137,6 +138,10 @@ body {
 }
 
 /* Hiệu ứng khi hover */
+
+.letter:hover {
+  transform: translateY(50px);
+}
 
 .letter:hover .letter-top {
   height: 200px;
