@@ -103,6 +103,9 @@ body {
   display: none;
 }
 
+.btn-menu {
+  display: none;
+}
 /* End CSS INPUT */
 
 /* CSS Header left */
