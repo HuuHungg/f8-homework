@@ -99,6 +99,10 @@ body {
   box-shadow: 0 0 6px rgb(245 75 75 / 90%);
 }
 
+.btn-menu {
+  display: none;
+}
+
 /* End CSS INPUT */
 
 /* CSS Header left */
@@ -550,6 +554,9 @@ button.header_footer-last-btn {
   .list-all {
     display: none;
   }
+  .btn-menu {
+    display: block;
+  }
   .row1 {
     display: flex;
     flex-wrap: wrap;
@@ -629,6 +636,7 @@ button.header_footer-last-btn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
 }
 /* Tablet */
 @media screen and (min-width: 576px) and (max-width: 991px) {
@@ -642,6 +650,9 @@ button.header_footer-last-btn {
   .row-wrap {
     display: flex;
     flex-wrap: wrap;
+  }
+  .btn-menu {
+    display: block;
   }
 }
 
