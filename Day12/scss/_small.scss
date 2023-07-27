@@ -1,0 +1,440 @@
+$with-color: #fff;
+$black-color: #000;
+
+
+body {
+  width: 100%;
+  background: url(../img/landing-background.jpg);
+}
+
+main {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+  @include responsive(lg) {
+    width: 500px;
+  }
+  @include responsive(xl) {
+    width: 100%;
+  }
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include responsive(xl) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .col {
+      &:first-child {
+        flex: 0 0 50%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 60px;
+      }
+      &:last-child {
+        flex: 0 0 50%;
+        padding-left: 100px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+h1 {
+  font-family: Titillium Web, sans-serif;
+  font-size: 6.5rem;
+  font-weight: 900;
+  position: relative;
+  top: -10px;
+}
+
+h2 {
+  margin-top: 36px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.landing {
+  padding-top: 80px;
+  color: $with-color;
+  text-align: center;
+
+  @include responsive(xl) {
+    padding-top: 0;
+    margin-top: -60px;
+  }
+
+  &__icon {
+    height: 60px;
+    margin-bottom: 36px;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 60px;
+
+    @include responsive(sm) {
+      font-size: 104px;
+    }
+
+    &-sm {
+      display: block;
+      font-family: "Rajdhani";
+      font-weight: 500;
+      font-size: 24px;
+      margin-bottom: -10px;
+    }
+  }
+  &__desc {
+    display: none;
+
+    @include responsive(xl) {
+      display: block;
+      width: 380px;
+      margin: 10px auto;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+}
+.btn-box {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+
+  @include responsive(sm) {
+    margin-top: 50px;
+  }
+  @include responsive(xl) {
+    margin-top: 90px;
+  }
+
+  &__bt {
+    flex: 0 0 50%;
+    font-size: 16px;
+    line-height: 52px;
+    font-weight: 700;
+    transition: background-color 0.2s ease-out;
+    text-transform: capitalize;
+    border: solid $with-color;
+
+    @include responsive(sm) {
+      flex: 0 0 180px;
+    }
+
+    @include responsive(xl) {
+      cursor: pointer;
+    }
+
+    &:first-child {
+      border-radius: 12px 0 0 12px;
+    }
+    &:last-child {
+      border-radius: 0 12px 12px 0;
+    }
+  }
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.form-wrap {
+  padding-top: 60px;
+  position: relative;
+
+  @include responsive(sm) {
+    padding-top: 80px;
+  }
+
+  @include responsive(xl) {
+    width: 484px;
+    min-height: 100vh;
+    padding-top: 0;
+  }
+}
+
+.form {
+  display: none;
+  position: relative;
+  padding: 40px 32px;
+  border-radius: 12px;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 100px;
+  box-shadow: 0 0 60px 0 rgba(94, 92, 154, 0.12);
+
+  @include responsive(sm) {
+    padding: 64px;
+  }
+
+  @include responsive(xl) {
+    margin-bottom: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translate(160%, -50%);
+    animation: right 1s linear;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -34px;
+      left: -80px;
+      width: 160px;
+      height: 156px;
+      background: url("https://odindesignthemes.com/vikinger/img/landing/rocket.png");
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  &__input-wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  &__input:not([type="checkbox"]) {
+    width: 100%;
+    height: 54px;
+    padding: 14px 18px;
+    border: 1px solid #dedeea;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 900;
+
+    // Tạo hiệu ứng khi focus vào chữ đẩy lên trên
+    &:focus {
+      border-color: #615dfa;
+    }
+    &:focus {
+      ~ .form__label {
+        top: -7px;
+        background-color: $with-color;
+        font-size: 11px;
+      }
+    }
+  }
+  &__input[type="checkbox"] {
+    display: none;
+  }
+  &__label-checkbox {
+    position: relative;
+    padding-left: 34px;
+    width: fit-content;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -5px;
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      border: 1px solid #dedeea;
+      transition: 0.2s ease-out;
+    }
+
+    &::after {
+      content: "X";
+      position: absolute;
+      left: 7px;
+      color: #fff;
+      top: -2px;
+    }
+  }
+
+  &__input[name="checkInput"]:checked + label::before {
+    background-color: #23d2e2;
+    border-color: #23d2e2;
+  }
+
+  &__label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #adafca;
+    padding: 0 6px;
+    transition: 0.2s ease-out;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: #adafca;
+    text-decoration: none;
+
+    &:hover {
+      color: #00c7d9;
+    }
+  }
+  &__btn-submit {
+    min-height: 54px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    box-shadow: 4px 7px 12px 0 rgba(97, 93, 250, 0.2);
+
+    &--login {
+      background-color: #615dfa;
+
+      &:hover {
+        background-color: #5753e4;
+      }
+    }
+    &--register {
+      background-color: #23d2e2;
+
+      &:hover {
+        background-color: #1bc5d4;
+      }
+    }
+  }
+  &__footer {
+    position: relative;
+    text-align: center;
+    padding-top: 12px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 19px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      z-index: 1;
+      background-color: #ddd;
+    }
+  }
+  &__sub-title {
+    position: relative;
+    padding: 0 8px;
+    background-color: #fff;
+    z-index: 2;
+  }
+  &__note {
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+
+    a {
+      color: rgb(0, 199, 217);
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+  margin-top: 34px;
+
+  &__link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.2s ease-out;
+
+    &--facebook {
+      background-color: #3866da;
+    }
+    &--twitter {
+      background-color: #1abcff;
+    }
+    &--twitch {
+      background-color: #7557fd;
+    }
+    &--youtube {
+      background-color: #fa3a47;
+    }
+
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+}
+
+@include responsive(xl) {
+  .landing-decoration {
+    width: 64%;
+    height: 140%;
+    border-radius: 50%;
+    background: url(../../img/bg-dot.png) $with-color;
+    background-repeat: repeat;
+    position: absolute;
+    top: -19%;
+    right: -38%;
+  }
+}
+
+@keyframes right {
+  0% {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(160%, -50%);
+    z-index: -1;
+  }
+}
+@keyframes inRight {
+  0% {
+    opacity: 0.5;
+    transform: translate(160%, -50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, -50%);
+    z-index: 1;
+  }
+}
+.btn_checkbox#login:checked ~ .row .col .btn-box__bt[for="login"],
+.btn_checkbox#register:checked ~ .row .col .btn-box__bt[for="register"] {
+  background-color: $with-color;
+  color: $black-color;
+}
+.btn_checkbox#login:checked ~ .row .col .form#loginForm,
+.btn_checkbox#register:checked ~ .row .col .form#registerForm {
+  display: block;
+  @include responsive(xl) {
+    animation: inRight 0.4s linear forwards;
+  }
+}
